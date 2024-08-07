@@ -8,7 +8,8 @@ header {
 }
 
 img {
-    max-width: 200px;
+    max-width: 100%;
+    height: auto;
     border-radius: 50%;
 }
 
@@ -18,5 +19,19 @@ main {
 
 footer {
     text-align: center;
-    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust styles for medium screens (tablets) */
+    img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust styles for small screens (phones) */
+    img {
+        width: 100px;
+    }
 }
