@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background: linear-gradient(to bottom, #663399, #000); /* Dark purple to black gradient */
 }
 
 header {
@@ -36,7 +37,6 @@ footer {
     }
 }
 
-/
 ul {
     list-style: none;
     padding: 0;
@@ -45,8 +45,6 @@ ul {
 li {
     margin-bottom: 10px;
 }
-
-/* ... previous CSS ... */
 
 .portfolio {
     display: flex;
