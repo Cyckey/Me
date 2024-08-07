@@ -1,8 +1,10 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
     background: linear-gradient(to bottom, #663399, #000); /* Dark purple to black gradient */
     color: #fff; /* Set text color to white */
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 header {
@@ -26,16 +28,21 @@ nav ul li a {
     text-decoration: none;
     padding: 10px 20px;
     display: block;
+    transition: background-color 0.3s, transform 0.3s; /* Add transition for hover effect */
 }
 
 nav ul li a:hover {
     background-color: #444;
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 img {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly moved */
+    animation: fadeIn 1s forwards ease-out; /* Fade-in animation */
 }
 
 main {
@@ -51,6 +58,9 @@ h2 {
 
 p {
     line-height: 1.6;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly moved */
+    animation: fadeIn 1s forwards ease-out 0.5s; /* Fade-in animation with delay */
 }
 
 footer {
@@ -109,12 +119,15 @@ li {
 .project {
     flex: 1 1 calc(33.33% - 40px);
     box-sizing: border-box;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly moved */
+    animation: fadeIn 1s forwards ease-out 0.5s; /* Fade-in animation with delay */
 }
 
 .project img {
     max-width: 100%;
     height: auto;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
     border-radius: 8px;
 }
 
@@ -125,6 +138,9 @@ li {
 
 h1, h2, h3 {
     margin: 10px 0;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly moved */
+    animation: fadeIn 1s forwards ease-out 0.5s; /* Fade-in animation with delay */
 }
 
 ul {
@@ -136,28 +152,46 @@ ul {
 .contact {
     margin-top: 20px;
     text-align: center;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly moved */
+    animation: fadeIn 1s forwards ease-out 0.5s; /* Fade-in animation with delay */
 }
 
 .contact a {
     color: #4CAF50;
     text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Add transition for hover effect */
 }
 
 .contact a:hover {
     text-decoration: underline;
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .social-media {
     margin-top: 20px;
     text-align: center;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly moved */
+    animation: fadeIn 1s forwards ease-out 0.5s; /* Fade-in animation with delay */
 }
 
 .social-media a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Add transition for hover effect */
 }
 
 .social-media a:hover {
     color: #4CAF50;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
