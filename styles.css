@@ -45,3 +45,22 @@ ul {
 li {
     margin-bottom: 10px;
 }
+
+/* ... previous CSS ... */
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
