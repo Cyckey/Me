@@ -9,6 +9,29 @@ header {
     text-align: center;
 }
 
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -17,6 +40,15 @@ img {
 
 main {
     text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.6;
 }
 
 footer {
@@ -50,17 +82,62 @@ li {
 .portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 20px;
+    justify-content: center;
 }
 
 .project {
-    width: calc(33.33% - 20px);
-    margin-bottom: 20px;
-    text-align: center;
+    flex: 1 1 calc(33.33% - 40px);
+    box-sizing: border-box;
 }
 
 .project img {
     max-width: 100%;
     height: auto;
-    }
-    
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #4CAF50;
+}
