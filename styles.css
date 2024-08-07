@@ -17,6 +17,7 @@ nav ul {
     padding: 0;
     list-style: none;
     background-color: #333;
+    border-radius: 20px; /* Rounded corners for nav bar */
 }
 
 nav ul li {
@@ -29,6 +30,7 @@ nav ul li a {
     padding: 10px 20px;
     display: block;
     transition: background-color 0.3s, transform 0.3s; /* Add transition for hover effect */
+    border-radius: 10px; /* Rounded corners for nav links */
 }
 
 nav ul li a:hover {
@@ -39,7 +41,7 @@ nav ul li a:hover {
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 50%; /* Rounded images */
     opacity: 0; /* Start hidden */
     transform: translateY(20px); /* Start slightly moved */
     animation: fadeIn 1s forwards ease-out; /* Fade-in animation */
@@ -50,6 +52,8 @@ main {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto; /* Center the main content */
+    border-radius: 20px; /* Rounded corners for main content */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
 }
 
 h2 {
@@ -65,6 +69,9 @@ p {
 
 footer {
     text-align: center;
+    border-radius: 20px; /* Rounded corners for footer */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 10px;
 }
 
 /* Responsive Design */
@@ -122,13 +129,16 @@ li {
     opacity: 0; /* Start hidden */
     transform: translateY(20px); /* Start slightly moved */
     animation: fadeIn 1s forwards ease-out 0.5s; /* Fade-in animation with delay */
+    border-radius: 20px; /* Rounded corners for projects */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 10px;
 }
 
 .project img {
     max-width: 100%;
     height: auto;
     transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
-    border-radius: 8px;
+    border-radius: 20px; /* Rounded corners for project images */
 }
 
 .project img:hover {
@@ -155,6 +165,9 @@ ul {
     opacity: 0; /* Start hidden */
     transform: translateY(20px); /* Start slightly moved */
     animation: fadeIn 1s forwards ease-out 0.5s; /* Fade-in animation with delay */
+    border-radius: 20px; /* Rounded corners for contact section */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 10px;
 }
 
 .contact a {
@@ -174,6 +187,9 @@ ul {
     opacity: 0; /* Start hidden */
     transform: translateY(20px); /* Start slightly moved */
     animation: fadeIn 1s forwards ease-out 0.5s; /* Fade-in animation with delay */
+    border-radius: 20px; /* Rounded corners for social media section */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 10px;
 }
 
 .social-media a {
@@ -183,7 +199,7 @@ ul {
     transition: color 0.3s, transform 0.3s; /* Add transition for hover effect */
 }
 
-.social-media a:hover {
+social-media a:hover {
     color: #4CAF50;
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
