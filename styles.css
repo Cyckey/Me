@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
     background: linear-gradient(to bottom, #663399, #000); /* Dark purple to black gradient */
+    color: #fff; /* Set text color to white */
 }
 
 header {
@@ -61,4 +62,5 @@ li {
 .project img {
     max-width: 100%;
     height: auto;
-}
+    }
+    
