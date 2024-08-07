@@ -41,6 +41,8 @@ img {
 main {
     text-align: center;
     padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Center the main content */
 }
 
 h2 {
@@ -57,16 +59,34 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    /* Adjust styles for medium screens (tablets) */
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+
     img {
         width: 150px;
     }
 }
 
 @media (max-width: 480px) {
-    /* Adjust styles for small screens (phones) */
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
     img {
         width: 100px;
+    }
+
+    .project {
+        flex: 1 1 100%; /* Make projects full-width on small screens */
     }
 }
 
