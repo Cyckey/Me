@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const nav = document.getElementById('main-nav');
     const backToTopBtn = document.getElementById('back-to-top');
     const header = document.querySelector('header');
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
 
     // Toggle navigation menu
     menuToggle.addEventListener('click', function () {
@@ -34,8 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Dark mode toggle
-    document.getElementById('dark-mode-toggle').addEventListener('click', function () {
+    darkModeToggle.addEventListener('click', function () {
         document.body.classList.toggle('dark-mode');
     });
 });
-
