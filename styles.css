@@ -28,6 +28,7 @@ header {
     align-items: center;
     flex-wrap: nowrap;
     overflow-x: auto;
+    border-radius: 20px;
 }
 
 nav ul {
@@ -49,7 +50,7 @@ nav ul li a {
     padding: 10px 20px;
     display: block;
     transition: background-color 0.3s, transform 0.3s;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 nav ul li a:hover {
@@ -87,7 +88,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-img {
+img.profile-pic {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
@@ -99,16 +100,21 @@ img {
 main {
     text-align: center;
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 20px;
     background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
 }
 
-h2 {
-    margin-top: 40px;
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    margin-top: 20px;
 }
 
 ul {
@@ -154,7 +160,7 @@ li {
     padding: 10px;
     background: #444;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
 }
@@ -254,7 +260,7 @@ footer {
         width: calc(50% - 20px);
     }
 
-    img {
+    img.profile-pic {
         width: 150px;
     }
 
@@ -268,7 +274,7 @@ footer {
         width: 100%;
     }
 
-    img {
+    img.profile-pic {
         width: 100px;
     }
 
@@ -283,4 +289,4 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
-    }
+}
