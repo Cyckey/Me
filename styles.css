@@ -112,7 +112,7 @@ h2 {
     animation: fadeIn 1s forwards ease-out;
 }
 
-p, ul, form {
+p, ul {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 1s forwards ease-out;
@@ -200,47 +200,6 @@ li {
     cursor: pointer;
 }
 
-/* Contact Form Styles */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-form label {
-    margin: 10px 0 5px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-
-form button {
-    width: 50%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-form button:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
-}
-
 /* Scrollbar Styles */
 body::-webkit-scrollbar {
     width: 10px;
@@ -277,10 +236,6 @@ footer {
     img {
         width: 150px;
     }
-
-    form {
-        width: 90%;
-    }
 }
 
 @media (max-width: 480px) {
@@ -291,9 +246,4 @@ footer {
     img {
         width: 100px;
     }
-
-    form {
-        width: 100%;
     }
-    }
-    
