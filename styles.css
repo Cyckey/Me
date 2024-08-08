@@ -94,15 +94,23 @@ nav ul li a:hover {
 
 /* Profile Picture */
 .profile-container {
-    text-align: center;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
 
 .profile-pic {
-    max-width: 200px;
-    height: auto;
     border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     border: 5px solid #fff;
+}
+
+/* Long blank space */
+.long-space {
+    height: 60px; /* Adjust the height as needed */
+    background-color: transparent; /* Optional: Add background color if needed */
 }
 
 /* Sections */
@@ -231,12 +239,6 @@ section {
 #back-to-top:hover {
     background: #45a049;
     transform: scale(1.05);
-}
-
-/* Long blank space */
-.long-space {
-    height: 100vh; /* Adjust the height as needed */
-    background-color: transparent; /* Optional: Add background color if needed */
 }
 
 /* Responsive Design Adjustments */
