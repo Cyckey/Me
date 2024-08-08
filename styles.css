@@ -30,7 +30,6 @@ header {
     align-items: center;
     overflow-x: auto;
     transition: top 0.3s;
-    border-radius: 0; /* Remove rounded corners */
 }
 
 #menu-toggle {
@@ -103,6 +102,7 @@ nav ul li a:hover {
     max-width: 200px;
     height: auto;
     border-radius: 50%;
+    border: 5px solid #fff;
 }
 
 /* Sections */
@@ -139,7 +139,7 @@ section {
     margin-bottom: 10px;
 }
 
-/* Projects Section */
+/* Projects & Portfolio Section */
 .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -284,5 +284,4 @@ section {
         padding: 10px 20px;
         font-size: 14px;
     }
-    }
-        
+            }
