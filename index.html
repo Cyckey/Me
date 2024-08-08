@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description about Cyckey including skills, projects, and portfolio.">
+    <meta name="keywords" content="Cyckey, portfolio, projects, skills, web development">
+    <meta name="author" content="Cyckey">
     <title>About Me</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <h1>About Me</h1>
-        <nav>
+        <nav role="navigation">
             <ul>
                 <li><a href="#who-am-i">Who Am I?</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -19,44 +23,61 @@
         </nav>
     </header>
     <main>
-        <img src="your_image.jpg" alt="Your Image">
-        <h2 id="who-am-i">Who Am I?</h2>
-        <p><strong>My name is Cyckey</strong> and this is where you write a brief introduction about yourself.</p>
-        <p>Add more paragraphs as needed to describe your interests, skills, or experiences.</p>
-        <h2 id="skills">Skills</h2>
-        <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
-        </ul>
-        <h2 id="projects">Projects</h2>
-        <ul>
-            <li>Project 1</li>
-            <li>Project 2</li>
-            <li>Project 3</li>
-        </ul>
-        <h2 id="portfolio">Portfolio</h2>
-        <div class="portfolio">
-            <div class="project">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Brief description of project 1.</p>
+        <section id="who-am-i">
+            <img src="your_image.jpg" alt="Your Image">
+            <h2>Who Am I?</h2>
+            <p><strong>My name is Cyckey</strong> and this is where you write a brief introduction about yourself.</p>
+            <p>Add more paragraphs as needed to describe your interests, skills, or experiences.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <li>Skill 3</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Project 1</li>
+                <li>Project 2</li>
+                <li>Project 3</li>
+            </ul>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio">
+                <article class="project">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Brief description of project 1.</p>
+                </article>
+                <article class="project">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Brief description of project 2.</p>
+                </article>
             </div>
-            <div class="project">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Brief description of project 2.</p>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p class="contact">You can reach me at: <a href="mailto:cyckey.starved431@passinbox.com">cyckey.starved431@passinbox.com</a></p>
+            <div class="social-media">
+                <a href="https://github.com/Cyckey" target="_blank">GitHub</a>
+                <!-- Add other social media links here -->
             </div>
-        </div>
-        <h2>Contact</h2>
-        <p class="contact">You can reach me at: <a href="mailto:cyckey.starved431@passinbox.com">cyckey.starved431@passinbox.com</a></p>
-        <div class="social-media">
-            <a href="https://github.com/Cyckey" target="_blank">GitHub</a>
-            <!-- Add other social media links here -->
-        </div>
+        </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <p>&copy; Cyckey, 2023</p>
+        <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
     </footer>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
