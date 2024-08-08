@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +8,16 @@
 </head>
 <body>
     <header>
-        <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-        <h1>About Me</h1>
+        <button id="menu-toggle">&#9776;</button>
         <nav id="main-nav" class="hidden">
             <ul>
                 <li><a href="#who-am-i">Who Am I?</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#interests">Interests</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
     </header>
     <main>
         <div class="profile-container">
@@ -29,40 +26,31 @@
         <section id="who-am-i">
             <h2>Who Am I?</h2>
             <p><strong>My name is Cyckey</strong> and this is where you write a brief introduction about yourself.</p>
+            <p>Add more paragraphs as needed to describe your interests, skills, or experiences.</p>
         </section>
-        
-        <!-- Long blank space -->
         <div class="long-space"></div>
-        
         <section id="skills">
             <h2>Skills</h2>
             <div class="skills-container">
                 <div class="skill">
-                    <img src="https://muazzz.netlify.app/assets/checkmark.png" alt="HTML Icon" class="skill-icon">
-                    <div class="skill-content">
-                        <h3>HTML</h3>
-                        <p>Some Experience</p>
-                    </div>
+                    <img src="https://muazzz.netlify.app/assets/checkmark.png" alt="Experience Icon" class="skill-icon">
+                    <h3>HTML</h3>
+                    <p>Some Experience</p>
                 </div>
                 <div class="skill">
-                    <img src="https://muazzz.netlify.app/assets/checkmark.png" alt="CSS Icon" class="skill-icon">
-                    <div class="skill-content">
-                        <h3>CSS</h3>
-                        <p>Basic</p>
-                    </div>
+                    <img src="https://muazzz.netlify.app/assets/checkmark.png" alt="Experience Icon" class="skill-icon">
+                    <h3>CSS</h3>
+                    <p>Basic</p>
                 </div>
                 <div class="skill">
-                    <img src="https://muazzz.netlify.app/assets/checkmark.png" alt="JavaScript Icon" class="skill-icon">
-                    <div class="skill-content">
-                        <h3>JavaScript</h3>
-                        <p>Some Experience</p>
-                    </div>
+                    <img src="https://muazzz.netlify.app/assets/checkmark.png" alt="Experience Icon" class="skill-icon">
+                    <h3>JavaScript</h3>
+                    <p>Some Experience</p>
                 </div>
             </div>
         </section>
-        
         <section id="projects">
-            <h2>Projects & Portfolio</h2>
+            <h2>Projects</h2>
             <div class="project-container">
                 <div class="project">
                     <img src="project1.jpg" alt="Project 1">
@@ -74,28 +62,25 @@
                     <h3>Project 2</h3>
                     <p>Brief description of project 2.</p>
                 </div>
-                <!-- Add more projects here if needed -->
             </div>
         </section>
-        
         <section id="interests">
             <h2>Interests</h2>
             <div class="interests-container">
                 <div class="interest">
                     <h3>Interest 1</h3>
-                    <p>Description of Interest 1.</p>
+                    <p>Description of interest 1.</p>
                 </div>
                 <div class="interest">
                     <h3>Interest 2</h3>
-                    <p>Description of Interest 2.</p>
+                    <p>Description of interest 2.</p>
                 </div>
                 <div class="interest">
                     <h3>Interest 3</h3>
-                    <p>Description of Interest 3.</p>
+                    <p>Description of interest 3.</p>
                 </div>
             </div>
         </section>
-
         <section id="contact">
             <h2>Contact</h2>
             <p>You can reach me at: <a href="mailto:cyckey.starved431@passinbox.com">cyckey.starved431@passinbox.com</a></p>
@@ -104,51 +89,12 @@
                 <!-- Add other social media links here -->
             </div>
         </section>
+        <div class="long-space"></div>
     </main>
     <footer>
         <p>&copy; Cyckey, 2023</p>
-        <button id="back-to-top">Top</button>
     </footer>
-    <script>
-        // JavaScript for sticky header, menu toggle, dark mode, and back-to-top button
-        let header = document.querySelector('header');
-        let lastScrollTop = 0;
-
-        window.addEventListener('scroll', function() {
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (scrollTop > lastScrollTop) {
-                // Scroll down
-                header.style.top = "-60px"; // Adjust height to match header height
-            } else {
-                // Scroll up
-                header.style.top = "0";
-            }
-            lastScrollTop = scrollTop;
-
-            // Back-to-top button
-            let backToTopButton = document.getElementById('back-to-top');
-            if (scrollTop > 300) {
-                backToTopButton.style.display = 'block';
-            } else {
-                backToTopButton.style.display = 'none';
-            }
-        });
-
-        document.getElementById('back-to-top').addEventListener('click', function() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            let nav = document.getElementById('main-nav');
-            nav.classList.toggle('hidden');
-        });
-
-        document.getElementById('dark-mode-toggle').addEventListener('click', function() {
-            document.body.classList.toggle('dark-mode');
-            let icon = this;
-            icon.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-        });
-    </script>
+    <button id="back-to-top">Back to Top</button>
+    <script src="scripts.js"></script>
 </body>
 </html>
