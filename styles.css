@@ -12,7 +12,7 @@ body {
 
 /* Dark Mode Styles */
 body.dark-mode {
-    background: linear-gradient(to bottom, #4b0082, #1a1a1a); /* Dark purple gradient */
+    background: linear-gradient(to bottom, #4b0082, #1a1a1a); /* Darker purple gradient */
     color: #ddd;
 }
 
@@ -161,7 +161,7 @@ section {
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    width: 300px;
+    width: calc(50% - 20px);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -315,4 +315,4 @@ section {
         padding: 10px 20px;
         font-size: 14px;
     }
-}
+    }
