@@ -96,7 +96,7 @@ nav ul li a:hover {
 .profile-container {
     display: flex;
     justify-content: center;
-    margin-top: 80px; /* Adjust margin to prevent overlap */
+    margin-top: 100px; /* Adjust margin to prevent overlap */
 }
 
 .profile-pic {
@@ -109,13 +109,13 @@ nav ul li a:hover {
 
 /* Long blank space */
 .long-space {
-    height: 60px; /* Adjust the height as needed */
-    background-color: transparent; /* Optional: Add background color if needed */
+    height: 200px; /* Increased height */
+    background-color: transparent;
 }
 
 /* Sections */
 section {
-    margin: 40px 0; /* Add space between sections */
+    margin: 80px 0; /* Added space between sections */
 }
 
 /* Skills Section */
