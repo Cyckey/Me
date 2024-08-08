@@ -2,19 +2,28 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background: linear-gradient(to bottom, #663399, #000); /* Dark purple to black gradient */
-    color: #fff; /* Set text color to white */
-    overflow-x: hidden; /* Prevent horizontal scroll */
-    scroll-behavior: smooth; /* Smooth scroll */
+    background: linear-gradient(to bottom, #663399, #000);
+    color: #fff;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
+/* Dark Mode Styles */
+body.dark-mode {
+    background: linear-gradient(to bottom, #000, #663399);
+    color: #ddd;
+}
+
+/* Sticky Navigation */
 header {
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -22,10 +31,6 @@ nav ul {
     justify-content: center;
     padding: 0;
     list-style: none;
-    background-color: #333;
-    border-radius: 20px; /* Rounded corners for nav bar */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
 }
 
 nav ul li {
@@ -37,188 +42,15 @@ nav ul li a {
     text-decoration: none;
     padding: 10px 20px;
     display: block;
-    transition: background-color 0.3s, transform 0.3s; /* Add transition for hover effect */
-    border-radius: 10px; /* Rounded corners for nav links */
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 10px;
 }
 
 nav ul li a:hover {
     background-color: #444;
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%; /* Rounded images */
-    opacity: 0; /* Start hidden */
-    transform: translateY(20px); /* Start slightly moved */
-    animation: fadeIn 1s forwards ease-out; /* Fade-in animation */
-}
-
-main {
-    text-align: center;
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto; /* Center the main content */
-    border-radius: 20px; /* Rounded corners for main content */
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
-}
-
-h2 {
-    margin-top: 20px;
-}
-
-p {
-    line-height: 1.6;
-    opacity: 0; /* Start hidden */
-    transform: translateY(20px); /* Start slightly moved */
-    animation: fadeIn 1s forwards ease-out 0.5s; /* Fade-in animation with delay */
-}
-
-footer {
-    text-align: center;
-    border-radius: 20px; /* Rounded corners for footer */
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-    
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    img {
-        width: 150px;
-    }
-}
-
-@media (max-width: 480px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    img {
-        width: 100px;
-    }
-
-    .project {
-        flex: 1 1 100%; /* Make projects full-width on small screens */
-    }
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.project {
-    flex: 1 1 calc(33.33% - 40px);
-    box-sizing: border-box;
-    opacity: 0; /* Start hidden */
-    transform: translateY(20px); /* Start slightly moved */
-    animation: fadeIn 1s forwards ease-out 0.5s; /* Fade-in animation with delay */
-    border-radius: 20px; /* Rounded corners for projects */
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.project img {
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
-    border-radius: 20px; /* Rounded corners for project images */
-}
-
-.project img:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-h1, h2, h3 {
-    margin: 10px 0;
-    opacity: 0; /* Start hidden */
-    transform: translateY(20px); /* Start slightly moved */
-    animation: fadeIn 1s forwards ease-out 0.5s; /* Fade-in animation with delay */
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.contact {
-    margin-top: 20px;
-    text-align: center;
-    opacity: 0; /* Start hidden */
-    transform: translateY(20px); /* Start slightly moved */
-    animation: fadeIn 1s forwards ease-out 0.5s; /* Fade-in animation with delay */
-    border-radius: 20px; /* Rounded corners for contact section */
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.contact a {
-    color: #4CAF50;
-    text-decoration: none;
-    transition: color 0.3s, transform 0.3s; /* Add transition for hover effect */
-}
-
-.contact a:hover {
-    text-decoration: underline;
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-.social-media {
-    margin-top: 20px;
-    text-align: center;
-    opacity: 0; /* Start hidden */
-    transform: translateY(20px); /* Start slightly moved */
-    animation: fadeIn 1s forwards ease-out 0.5s; /* Fade-in animation with delay */
-    border-radius: 20px; /* Rounded corners for social media section */
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.social-media a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-    transition: color 0.3s, transform 0.3s; /* Add transition for hover effect */
-}
-
-.social-media a:hover {
-    color: #4CAF50;
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-/* Buttons */
 button {
     background-color: #4CAF50;
     color: white;
@@ -234,20 +66,207 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Form Styling */
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
+#dark-mode-toggle {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Fade-in Animation */
+#dark-mode-toggle:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards ease-out;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards ease-out;
+}
+
+p, ul, form {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards ease-out;
+}
+
 @keyframes fadeIn {
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
+/* Portfolio Styles */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+    color: #000;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+form button {
+    width: 50%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Scrollbar Styles */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #444;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project {
+        width: calc(50% - 20px);
+    }
+
+    img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        width: 100%;
+    }
+
+    img {
+        width: 100px;
+    }
+    }
+        
