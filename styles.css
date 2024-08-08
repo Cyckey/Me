@@ -96,7 +96,7 @@ nav ul li a:hover {
 .profile-container {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin-top: 80px; /* Adjust margin to prevent overlap */
 }
 
 .profile-pic {
@@ -115,7 +115,7 @@ nav ul li a:hover {
 
 /* Sections */
 section {
-    margin-bottom: 60px;
+    margin: 40px 0; /* Add space between sections */
 }
 
 /* Skills Section */
@@ -258,6 +258,10 @@ section {
         border-radius: 0 0 10px 10px;
     }
 
+    #main-nav.hidden {
+        display: none;
+    }
+
     #main-nav ul {
         display: flex;
         flex-direction: column;
@@ -292,4 +296,4 @@ section {
         padding: 10px 20px;
         font-size: 14px;
     }
-    }
+}
