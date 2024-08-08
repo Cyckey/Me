@@ -2,15 +2,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menu-toggle');
     const nav = document.getElementById('main-nav');
     const backToTopBtn = document.getElementById('back-to-top');
-    const header = document.querySelector('header');
     const darkModeToggle = document.getElementById('dark-mode-toggle');
+    let lastScrollTop = 0;
 
     // Toggle navigation menu
     menuToggle.addEventListener('click', function () {
         nav.classList.toggle('hidden');
     });
 
-    // Show/Hide Back to Top Button
+    // Show/Hide Back to Top Button with animation
     window.addEventListener('scroll', function () {
         if (window.scrollY > 200) {
             backToTopBtn.style.display = 'block';
@@ -19,12 +19,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Hide/Show header on scroll
-        let lastScrollTop = 0;
-        const headerHeight = header.offsetHeight;
         if (window.scrollY > lastScrollTop) {
-            header.style.top = `-${headerHeight}px`;
+            document.querySelector('header').style.top = '-60px';
         } else {
-            header.style.top = '0';
+            document.querySelector('header').style.top = '0';
         }
         lastScrollTop = window.scrollY;
     });
