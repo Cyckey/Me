@@ -285,3 +285,8 @@ section {
         font-size: 14px;
     }
             }
+/* Long blank space */
+.long-space {
+    height: 100vh; /* Adjust the height as needed */
+    background-color: transparent; /* Optional: Add background color if needed */
+}
