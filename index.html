@@ -11,7 +11,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header id="header">
         <h1>About Me</h1>
         <nav role="navigation">
             <ul>
@@ -153,6 +153,19 @@
             } else {
                 backToTopButton.style.display = 'none';
             }
+        });
+
+        // Hide Header on Scroll Down, Show on Scroll Up
+        let lastScrollTop = 0;
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                header.style.top = '-60px'; // Adjust based on header height
+            } else {
+                header.style.top = '0';
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
         });
     </script>
 </body>
