@@ -108,23 +108,7 @@ main {
 }
 
 h2 {
-    margin-top: 20px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1s forwards ease-out;
-}
-
-p, ul {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1s forwards ease-out;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    margin-top: 40px;
 }
 
 ul {
@@ -139,12 +123,11 @@ li {
 .portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
 }
 
 .project {
-    width: calc(100% - 40px);
+    width: calc(33.33% - 40px);
     margin-bottom: 20px;
     text-align: center;
     background: rgba(255, 255, 255, 0.2);
@@ -163,6 +146,22 @@ li {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;
+    background: #444;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-media a:hover {
+    background: #666;
+    transform: scale(1.05);
 }
 
 /* Modal Styles */
@@ -230,6 +229,25 @@ footer {
     margin-top: 20px;
 }
 
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#back-to-top:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .project {
@@ -238,6 +256,10 @@ footer {
 
     img {
         width: 150px;
+    }
+
+    main {
+        padding: 10px;
     }
 }
 
@@ -249,4 +271,16 @@ footer {
     img {
         width: 100px;
     }
+
+    main {
+        padding: 10px;
+    }
 }
+
+/* Animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
