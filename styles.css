@@ -26,7 +26,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
 nav ul {
@@ -35,6 +36,7 @@ nav ul {
     padding: 0;
     list-style: none;
     margin: 0;
+    white-space: nowrap;
 }
 
 nav ul li {
@@ -143,8 +145,9 @@ li {
 
 .project {
     width: calc(100% - 40px);
-    margin: 10px;
-    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -246,4 +249,4 @@ footer {
     img {
         width: 100px;
     }
-    }
+}
