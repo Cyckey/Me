@@ -120,6 +120,7 @@ h2 {
     width: calc(33.33% - 20px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .skill-icon {
@@ -292,6 +293,4 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-    
+    }
