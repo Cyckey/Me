@@ -18,22 +18,27 @@ body.dark-mode {
 
 /* Sticky Navigation */
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     background: rgba(0, 0, 0, 0.8);
     padding: 10px 20px;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
     overflow-x: auto;
     border-radius: 20px;
+    transition: top 0.3s;
+}
+
+header h1 {
+    margin: 0;
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
     padding: 0;
     list-style: none;
     margin: 0;
@@ -50,41 +55,41 @@ nav ul li a {
     padding: 10px 20px;
     display: block;
     transition: background-color 0.3s, transform 0.3s;
-    border-radius: 20px;
 }
 
 nav ul li a:hover {
-    background-color: #444;
+    background-color: #4CAF50;
+    border-radius: 10px;
     transform: scale(1.05);
 }
 
-button {
-    background-color: #4CAF50;
+#dark-mode-toggle {
+    background: #4CAF50;
     color: white;
-    padding: 10px 20px;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
+    padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
 
-button:hover {
-    background-color: #45a049;
+#dark-mode-toggle:hover {
+    background: #45a049;
     transform: scale(1.05);
 }
 
 /* Profile Picture */
 .profile-container {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin-bottom: 20px;
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    animation: fadeIn 1s ease-in-out;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Sections */
@@ -92,6 +97,7 @@ main {
     padding: 20px;
     max-width: 1200px;
     margin: auto;
+    padding-top: 80px; /* Account for the fixed header */
 }
 
 section {
