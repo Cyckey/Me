@@ -300,3 +300,84 @@ footer {
         transform: translateY(0);
     }
     }
+
+/* Interests Section */
+.interests-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -10px; /* Ensure no extra spacing on edges */
+}
+
+.interest {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.interest:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.interest h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.interest p {
+    margin: 5px 0 0;
+}
+
+/* Section Spacing */
+section {
+    margin-bottom: 60px; /* Increased spacing between sections */
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #4CAF50;
+    color: white;
+    padding: 20px 40px; /* Larger size for desktop */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 18px; /* Larger font size for desktop */
+}
+
+#back-to-top:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .interest {
+        width: calc(50% - 20px);
+    }
+
+    #back-to-top {
+        padding: 15px 30px; /* Adjust size for mobile */
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .interest {
+        width: 100%;
+    }
+
+    #back-to-top {
+        padding: 10px 20px; /* Adjust size for mobile */
+        font-size: 14px;
+    }
+}
