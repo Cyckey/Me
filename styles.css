@@ -12,7 +12,7 @@ body {
 
 /* Dark Mode Styles */
 body.dark-mode {
-    background: linear-gradient(to bottom, #000, #333); /* Darker gradient */
+    background: linear-gradient(to bottom, #4b0082, #1a1a1a); /* Dark purple gradient */
     color: #ddd;
 }
 
@@ -33,7 +33,7 @@ header {
 }
 
 #menu-toggle {
-    display: none; /* Hidden by default */
+    display: block; /* Show menu toggle */
     background: none;
     border: none;
     color: #fff;
@@ -109,12 +109,13 @@ nav ul li a:hover {
 
 /* Long blank space */
 .long-space {
-    height: 1000px; /* Increased height */
+    height: 200px; /* Increased height */
     background-color: transparent;
 }
 
 /* Sections */
 section {
+    text-align: center; /* Center align section text */
     margin: 80px 0; /* Added space between sections */
 }
 
@@ -208,6 +209,24 @@ section {
 }
 
 /* Contact Section */
+#contact {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#contact a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #45a049;
+}
+
 .social-media a {
     color: #4CAF50;
     text-decoration: none;
@@ -254,7 +273,7 @@ section {
         top: 60px;
         right: 0;
         background: rgba(0, 0, 0, 0.9);
-        width: 200px;
+        width: 100%;
         border-radius: 0 0 10px 10px;
     }
 
