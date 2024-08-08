@@ -233,6 +233,12 @@ section {
     transform: scale(1.05);
 }
 
+/* Long blank space */
+.long-space {
+    height: 100vh; /* Adjust the height as needed */
+    background-color: transparent; /* Optional: Add background color if needed */
+}
+
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
     #menu-toggle {
@@ -284,9 +290,4 @@ section {
         padding: 10px 20px;
         font-size: 14px;
     }
-            }
-/* Long blank space */
-.long-space {
-    height: 100vh; /* Adjust the height as needed */
-    background-color: transparent; /* Optional: Add background color if needed */
-}
+    }
