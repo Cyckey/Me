@@ -8,65 +8,94 @@
 </head>
 <body>
     <header>
-        <div class="menu-icon" id="menu-toggle">&#9776;</div>
+        <button id="menu-toggle">&#9776;</button>
         <nav id="main-nav" class="hidden">
             <ul>
                 <li><a href="#who-am-i">Who Am I?</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#interests">Interests</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
     </header>
     <main>
-        <img src="https://media.discordapp.net/attachments/1239773438122393653/1270992508465184829/aivibing_1.gif?ex=66b5b783&is=66b46603&hm=1629d8c4f13fc30a5cff754d27b38e73f16719a637521f1bcad2fe41b63abc31&" alt="Your Profile Picture" class="profile-pic">
-        
-        <h2 id="who-am-i">Who Am I?</h2>
-        <p><strong>My name is Cyckey</strong> and this is where you write a brief introduction about yourself.</p>
-        
-        <!-- Long Blank Space -->
-        <div class="blank-space"></div>
-
-        <h2 id="skills">Skills</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <img src="https://muazzz.netlify.app/assets/checkmark.png" alt="Experience Icon">
-                <h3>Frontend Development</h3>
-                <p>Some Experience</p>
-            </div>
-            <div class="skill">
-                <img src="https://muazzz.netlify.app/assets/checkmark.png" alt="Experience Icon">
-                <h3>HTML</h3>
-                <p>Some Experience</p>
-            </div>
-            <div class="skill">
-                <img src="https://muazzz.netlify.app/assets/checkmark.png" alt="Experience Icon">
-                <h3>CSS</h3>
-                <p>Basic</p>
-            </div>
-            <div class="skill">
-                <img src="https://muazzz.netlify.app/assets/checkmark.png" alt="Experience Icon">
-                <h3>JavaScript</h3>
-                <p>Some Experience</p>
-            </div>
+        <div class="profile-container">
+            <img src="https://media.discordapp.net/attachments/1239773438122393653/1270992508465184829/aivibing_1.gif?ex=66b5b783&is=66b46603&hm=1629d8c4f13fc30a5cff754d27b38e73f16719a637521f1bcad2fe41b63abc31&" alt="Profile Picture" class="profile-pic">
         </div>
-        
-        <!-- Other sections like Projects and Contact would go here -->
-        
-        <h2 id="contact">Contact</h2>
-        <p class="contact">You can reach me at: <a href="mailto:cyckey.starved431@passinbox.com">cyckey.starved431@passinbox.com</a></p>
-        <div class="social-media">
-            <a href="https://github.com/Cyckey" target="_blank">GitHub</a>
-        </div>
+        <section id="who-am-i">
+            <h2>Who Am I?</h2>
+            <p><strong>My name is Cyckey</strong> and this is where you write a brief introduction about yourself.</p>
+            <p>Add more paragraphs as needed to describe your interests, skills, or experiences.</p>
+        </section>
+        <div class="long-space"></div>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="https://muazzz.netlify.app/assets/checkmark.png" alt="Experience Icon" class="skill-icon">
+                    <h3>HTML</h3>
+                    <p>Some Experience</p>
+                </div>
+                <div class="skill">
+                    <img src="https://muazzz.netlify.app/assets/checkmark.png" alt="Experience Icon" class="skill-icon">
+                    <h3>CSS</h3>
+                    <p>Basic</p>
+                </div>
+                <div class="skill">
+                    <img src="https://muazzz.netlify.app/assets/checkmark.png" alt="Experience Icon" class="skill-icon">
+                    <h3>JavaScript</h3>
+                    <p>Some Experience</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="project">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Brief description of project 1.</p>
+                </div>
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Brief description of project 2.</p>
+                </div>
+            </div>
+        </section>
+        <section id="interests">
+            <h2>Interests</h2>
+            <div class="interests-container">
+                <div class="interest">
+                    <h3>Interest 1</h3>
+                    <p>Description of interest 1.</p>
+                </div>
+                <div class="interest">
+                    <h3>Interest 2</h3>
+                    <p>Description of interest 2.</p>
+                </div>
+                <div class="interest">
+                    <h3>Interest 3</h3>
+                    <p>Description of interest 3.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at: <a href="mailto:cyckey.starved431@passinbox.com">cyckey.starved431@passinbox.com</a></p>
+            <div class="social-media">
+                <a href="https://github.com/Cyckey" target="_blank">GitHub</a>
+                <!-- Add other social media links here -->
+            </div>
+        </section>
+        <div class="long-space"></div>
     </main>
     <footer>
         <p>&copy; Cyckey, 2023</p>
     </footer>
-    
-    <!-- Dark Mode Toggle and Back to Top Button -->
-    <button id="dark-mode-toggle">🌙</button>
-    <div id="back-to-top">&#8679;</div>
-
+    <button id="back-to-top">Back to Top</button>
     <script src="scripts.js"></script>
 </body>
 </html>
