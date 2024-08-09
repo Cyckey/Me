@@ -28,9 +28,17 @@ document.addEventListener('DOMContentLoaded', function () {
         lastScrollTop = window.scrollY;
     });
 
-    // Back to Top Button functionality
+    // Back to Top Button functionality with bounce animation
     backToTopBtn.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+        
+        // Trigger bounce animation
+        backToTopBtn.classList.add('clicked');
+
+        // Remove the animation class after the animation ends
+        setTimeout(function () {
+            backToTopBtn.classList.remove('clicked');
+        }, 500); // Duration matches the animation length
     });
 
     // Dark mode toggle
@@ -38,4 +46,3 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.toggle('dark-mode');
     });
 });
-                
