@@ -5,32 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
         <h1>About Me</h1>
-        <button id="menu-toggle">☰ Menu</button>
         <nav id="main-nav" class="hidden">
             <ul>
                 <li><a href="#who-am-i">Who Am I?</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects & Portfolio</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#interests">Interests</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <button id="menu-toggle">☰</button>
     </header>
-
     <main>
-        <img src="https://media.discordapp.net/attachments/1239773438122393653/1270992508465184829/aivibing_1.gif?ex=66b5b783&is=66b46603&hm=1629d8c4f13fc30a5cff754d27b38e73f16719a637521f1bcad2fe41b63abc31&" alt="Profile Picture" class="profile-pic">
+        <img src="https://media.discordapp.net/attachments/1239773438122393653/1270992508465184829/aivibing_1.gif?ex=66b5b783&is=66b46603&hm=1629d8c4f13fc30a5cff754d27b38e73f16719a637521f1bcad2fe41b63abc31&" alt="Profile Picture" class="profile-picture">
         <h2 id="who-am-i">Who Am I?</h2>
         <p><strong>My name is Cyckey</strong> and this is where you write a brief introduction about yourself.</p>
         <p>Add more paragraphs as needed to describe your interests, skills, or experiences.</p>
 
-        <div style="height: 500px;"></div> <!-- Long blank space for demonstration -->
+        <div class="long-space"></div> <!-- Long space added between sections -->
 
         <h2 id="skills">Skills</h2>
-        <ul>
+        <ul class="skills-list">
             <li><img src="https://muazzz.netlify.app/assets/checkmark.png" alt="Checkmark"> HTML - Some Experience</li>
             <li><img src="https://muazzz.netlify.app/assets/checkmark.png" alt="Checkmark"> CSS - Basic</li>
             <li><img src="https://muazzz.netlify.app/assets/checkmark.png" alt="Checkmark"> JavaScript - Some Experience</li>
@@ -54,11 +54,15 @@
         <div class="interests-container">
             <div class="interest">
                 <h3>Interest 1</h3>
-                <p>Details about this interest.</p>
+                <p>Description of Interest 1.</p>
             </div>
             <div class="interest">
                 <h3>Interest 2</h3>
-                <p>Details about this interest.</p>
+                <p>Description of Interest 2.</p>
+            </div>
+            <div class="interest">
+                <h3>Interest 3</h3>
+                <p>Description of Interest 3.</p>
             </div>
         </div>
 
@@ -71,14 +75,10 @@
             </div>
         </div>
     </main>
-
-    <button id="back-to-top">Back to Top</button>
-
     <footer>
         <p>&copy; Cyckey, 2023</p>
-        <button id="dark-mode-toggle">Toggle Dark Mode</button>
     </footer>
 
-    <script src="scripts.js"></script>
+    <button id="back-to-top">Top</button>
 </body>
 </html>
